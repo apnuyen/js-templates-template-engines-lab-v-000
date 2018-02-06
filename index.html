@@ -8,28 +8,20 @@
       <form id="post-form" onsubmit="createPost()">
         <h2>Add Post</h2>
         Title: <input type="text" id="postTitle"><br>
-        Post: <input type="textarea" id="postText"><br>
+        Post: <input type="textarea" id="postBody"><br>
         Author: <input type="text" id="postAuthor"><br>
         <input type="submit">
       </form>
-      <div id="post">
-
-      </div>
-      <div id="page">
-
-      </div>
+      <div id="post"></div>
+      <div id="page"></div>
       <form onsubmit="postComment()">
         <h2>Add Comment</h2>
         Name: <input type="text" id="commenterName"><br>
         Text: <input type="text" id="commentText"><br>
         <input type="submit">
       </form>
-      <div id="comment">
-
-      </div>
-      <div id="comments">
-
-      </div>
+      <div id="comment"></div>
+      <div id="comments"></div>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>

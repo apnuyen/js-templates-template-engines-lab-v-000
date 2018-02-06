@@ -10,6 +10,9 @@ function createPost(){
 
   var TemplateHTML = postTemplateFn({'title': postTitle, 'body': post, 'poster': postAuthor});
   var postElement = document.getElementById("post")
+
+  postElement.innerHTML = templateHTML;
+  postElement.getElementsByTagName("footer")[0].innerHTML = commentsTemplateFn();
 }
 
 function postComment(){

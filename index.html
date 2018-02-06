@@ -8,8 +8,9 @@
       <form id="post-form" onsubmit="createPost()">
         <h2>Add Post</h2>
         Title: <input type="text" id="postTitle"><br>
-        Post: <br>
-        Author: <br>
+        Post: <input type="text" id="postText"><br>
+        Author: <input type="text" id="postAuthor"><br>
+        <input type="submit">
       </form>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
@@ -22,10 +23,10 @@
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
     <script id="page-template" type="text/javascript">
-      
+
     </script>
     <script type="text/javascript" id="post-template">
-      
+
     </script>
     <script type="text/javascript" id="comments-template">
       <form id="comment-form" onsubmit="postComment()">
@@ -35,7 +36,7 @@
       </form>
     </script>
     <script type="text/javascript" id="comment-template">
-      
+
     </script>
   </body>
 </html>

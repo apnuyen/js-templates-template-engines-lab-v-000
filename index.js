@@ -5,8 +5,13 @@ function createPost(){
   var postTitle = document.getElementById("postTitle").value;
   var postAuthor = document.getElementById('postAuthor').value;
   var post = document.getElementById('postText').value;
+
+  document.getElementByTagName("main")[0].innerHTML += pageTEmplateFn();
+
+  var TemplateHTML = postTemplateFn({'title': postTitle, 'body': post, 'poster': postAuthor});
+  var postElement = document.getElementById("post")
 }
 
 function postComment(){
-  
+
 }

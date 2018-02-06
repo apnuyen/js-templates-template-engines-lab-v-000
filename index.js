@@ -16,5 +16,9 @@ function createPost(){
 }
 
 function postComment(){
-
+  var commentTemplateFn = _.template(document.getElementById("comment-template").innerHTML);
+  var commentText=document.getElementById("commentText").value;
+  var commenterName=document.getElementById("commenterName").value;
+  var commentsSection=document.getElementById("comments");
+  commentsSection.innerHTML += commentTemplateFn({'commenter': commenterName, 'comment': commentText});
 }
